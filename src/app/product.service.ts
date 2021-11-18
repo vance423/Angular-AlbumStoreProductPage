@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
-import { Http ,Response } from '@angular/http'
+
+import { Http, Response} from '@angular/http';
+
 import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs';
+
 import { Album } from './album';
 
+import { map, Observable} from 'rxjs';
 
+ 
 @Injectable()
 export class ProductService {
+  
   private _albumUrl = '../assets/album.json';
+  private _productsUrl = '../assets/products.json';
 
   constructor(private _http: Http) { }
 
