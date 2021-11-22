@@ -1,6 +1,6 @@
 import { Track } from './track';
 
-export interface album {
+export interface Album {
     name: string;
     releaseDate: string;
     coverImage: string;
